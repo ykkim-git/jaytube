@@ -24,9 +24,7 @@ class Youtube {
     );
     const result_1 = await response.json();
     return result_1.items.map((item) => ({ ...item, id: item.id.videoId }));
-    // .then((items) => setVideos(items))
-    // .catch((error) => console.log("error", error));
   }
 }
 
-export default Youtube
+export default Youtube;
