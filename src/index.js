@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import App from "./app";
 import "./app.module.css";
 import "./index.css";
-import Youtube from "./service/youtube";
+// import YoutubeFetch from "./service/youtube-fetch";
+import Youtube from "./service/youtube"
 
+// const youtube = new YoutubeFetch(process.env.REACT_APP_YOUTUBE_API_KEY);
 const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY);
 ReactDOM.render(
   <React.StrictMode>
