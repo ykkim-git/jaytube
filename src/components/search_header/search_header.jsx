@@ -13,6 +13,10 @@ const SearchHeader = ({ onSearch }) => {
     handleSearch();
   };
 
+  const onClickLogo = () => {
+    window.history.back();
+  }
+
   const onKeyPress = (event) => {
     if (event.key === "Enter") {
       handleSearch();
@@ -21,7 +25,7 @@ const SearchHeader = ({ onSearch }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={onClickLogo}>
         <img className={styles.img} src="/images/logo.png" alt="logo" />
         <h1 className={styles.title}>Jaytube</h1>
       </div>
